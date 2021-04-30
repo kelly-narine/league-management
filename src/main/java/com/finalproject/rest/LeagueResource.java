@@ -16,7 +16,7 @@ public class LeagueResource {
     @EJB
     private LeagueService leagueService;
 
-    //request to check if the service is working
+    //request to check if the service is working or not
     @GET
     @Path("/ping")
     public Response ping() {

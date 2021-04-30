@@ -19,7 +19,7 @@ public class League {
     private Long id;
     private String name;
 
-    @JsonIgnore // Allows team list not to be displayed
+    @JsonIgnore //Allows team list not to be displayed
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER, orphanRemoval = true)
     private List<Team> teamList;
 }
